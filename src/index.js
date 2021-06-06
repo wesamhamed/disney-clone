@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import GlobalStyle from './globalStyles';
 import './index.css';
 import App from './App';
 import { store } from './app/store';
@@ -9,6 +10,7 @@ import * as serviceWorker from './serviceWorker';
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
+      <GlobalStyle/>
       <App />
     </Provider>
   </React.StrictMode>,
